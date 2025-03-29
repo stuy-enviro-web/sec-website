@@ -34,7 +34,6 @@ export default function Nav() {
             <Link href={"/events"} className="text-white flex justify-center flex-col">Events</Link>
             <Link href={"/resources"} className="text-white flex justify-center flex-col">Resources</Link>
         </div>
-
         <button onClick={toggleDarkMode} className="col-start-11 sm:col-start-12 col-span-full row-start-1 m-3 sm:m-4">
             {
                 // ! keep the invert
