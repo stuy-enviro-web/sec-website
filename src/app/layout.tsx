@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Nav from "@/components/Nav";
+import Providers from "@/app/providers";
 
 export const metadata: Metadata = {
     title: "StuyEnviro",
-    description: "SIGMA SIGMA SIGMA",
+    description: "The Stuyvesant Environmental Website",
 };
 
 export default function RootLayout({
@@ -13,7 +14,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
+        <html lang="en" suppressHydrationWarning>
             <head>
                 <link
                     rel="icon"
@@ -25,8 +26,10 @@ export default function RootLayout({
             <body
                 className={`antialiased`}
             >
-                <Nav />
-                {children}
+                <Providers>
+                    <Nav />
+                    {children}
+                </Providers>
             </body>
         </html>
     );
