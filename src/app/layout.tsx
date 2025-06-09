@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Providers from "@/app/providers";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
     title: "StuyEnviro",
@@ -29,6 +30,7 @@ export default function RootLayout({
                 <Providers>
                     <Nav />
                     {children}
+                    <Footer />
                 </Providers>
             </body>
         </html>
