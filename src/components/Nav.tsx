@@ -3,7 +3,7 @@ import logo from "public/sec_logo.svg";
 import moon from "public/Moon.svg";
 import sun from "public/Sun.svg";
 import blank from "public/Blank.webp"
-import menu from "public/darkMenu.webp"
+import menu from "public/menu.svg"
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 
@@ -38,7 +38,7 @@ export default function Nav() {
             {!mounted && <Image src={blank} className="h-9 w-9 dark:invert invert " alt={resolvedTheme === "dark" ? "Sun emoji, clicking will give light mode" : "Moon emoji, clicking will give dark mode"} />}
         </button>
         <button onClick={() => setDropdownOpen(!dropdownOpen)} className="visible md:invisible row-start-1 col-start-12">
-            <Image src={menu} alt="menu button" className="invert" />
+            <Image src={menu} alt="menu button" className="" />
         </button>
 
         {dropdownOpen && <div className="absolute right-1 p-3 top-[4.1em] bg-browndark z-50">
