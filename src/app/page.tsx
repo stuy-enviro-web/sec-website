@@ -63,18 +63,18 @@ export default function Home() {
                     Old Website
                 </h3>
 
-                <ul className="text-md font-light lexend list-disc pl-5">
+                <ul className="text-md font-light lexend pl-5">
                     <li><a className="hover:underline" href="https://stuyenviro.weebly.com/">SEC&apos;s Old Website</a></li>
                     <li><a className="hover:underline" href="https://google.com">LOREM IPSUM</a></li>
                     <li><a className="hover:underline" href="https://google.com">LOREM IPSUM</a></li>
                     <li><a className="hover:underline" href="https://google.com">LOREM IPSUM</a></li>
 
                 </ul>
-                <br/>
+                <br />
                 <h3 className="text-2xl font-bold miltonian">
                     Socials
                 </h3>
-                <ul className="text-md font-light lexend list-disc pl-5">
+                <ul className="text-md font-light lexend pl-5">
                     <li><a className="hover:underline" href="https://google.com">LOREM IPSUM</a></li>
                     <li><a className="hover:underline" href="https://google.com">LOREM IPSUM</a></li>
                     <li><a className="hover:underline" href="https://google.com">LOREM IPSUM</a></li>
@@ -84,13 +84,14 @@ export default function Home() {
                 <h3 className="text-2xl font-bold miltonian">
                     Other
                 </h3>
-                <ul className="text-md font-light lexend list-disc pl-5">
+                <ul className="text-md font-light lexend pl-5">
                     <li><a className="hover:underline" href="https://google.com">LOREM IPSUM</a></li>
                     <li><a className="hover:underline" href="https://google.com">LOREM IPSUM</a></li>
                     <li><a className="hover:underline" href="https://google.com">LOREM IPSUM</a></li>
 
                 </ul>
-
+                <br />
+                <p className="font-light text-md">If you have any problems / concerns, please contact <a href="">emailaddr@test.org</a></p>
             </div>
 
         </div>
