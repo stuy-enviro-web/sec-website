@@ -7,7 +7,7 @@ export default function UpcomingEvents() {
             </h1>
 
             <div
-                className="no-scrollbar col-start-1 col-span-full row-start-3 row-span-full flex m-4 flex-row flex-nowrap w-full overflow-x-auto scroll-smooth"
+                className="overflow-y-hidden no-scrollbar col-start-1 col-span-full row-start-3 row-span-full flex m-4 flex-row flex-nowrap w-full overflow-x-auto scroll-smooth"
             >
                 {/* Using fixed width/height for consistent sizing */}
                 <div className="flex gap-4 flex-nowrap">
