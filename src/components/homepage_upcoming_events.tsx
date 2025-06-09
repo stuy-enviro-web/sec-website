@@ -2,7 +2,7 @@ export default function UpcomingEvents() {
 
     return (
         <div className="w-full h-80 grid grid-cols-12 grid-rows-12 bg-[#D9D9D9] relative overflow-hidden">
-            <h1 className="whitespace-normal text-3xl font-bold ml-5 col-start-1 row-start-2 col-span-3 font-lexend">
+            <h1 className="whitespace-normal text-3xl font-bold ml-0 sm:ml-5 text-center sm:text-left col-start-1 row-start-2 col-span-full font-lexend">
                 Upcoming Events
             </h1>
 
