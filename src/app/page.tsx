@@ -1,5 +1,6 @@
 
 import Carousel from "@/components/carousel";
+import UpcomingEvents from "@/components/homepage_upcoming_events";
 
 import instagram_logo from "public/logos/Instagram_logo.svg"
 import discord_logo from "public/logos/Discord_logo.svg"
@@ -21,9 +22,9 @@ export default function Home() {
                 <a href="https://discord.gg/N8GUFcAZPJ"><Image className="w-10 h-auto transition-transform hover:scale-105 hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none" src={discord_logo} alt="Discord Logo and Link to the SEC discord page" /></a>
                 <a href="https://www.instagram.com/stuyenviroclub"><Image className="w-10 h-auto transition-transform hover:scale-105 hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none" src={instagram_logo} alt="Instagram Logo and Link to the SEC insta page" /></a>
                 <a href="https://www.facebook.com/groups/281609128612255"><Image className="w-10 h-auto transition-transform hover:scale-105 hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none" src={facebook_logo} alt="Facebook Logo and Link to the SEC facebook page" /></a>
-
             </div>
         </div>
+        <UpcomingEvents />
     </div>
     );
 }
