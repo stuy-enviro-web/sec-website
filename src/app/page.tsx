@@ -10,6 +10,7 @@ import su_logo from "public/logos/SU_logo.svg"
 import club_board from "public/media/club_board.png"
 import hard_at_work from "public/media/hard_at_work.png"
 import funny_faces from "public/media/sec_funny_faces.png"
+import image_medley from "public/media/image_medley.png";
 
 import Link from "next/link";
 import Image from "next/image"
@@ -32,8 +33,9 @@ export default function Home() {
         </div>
         <UpcomingEvents />
         <div className="w-full h-10"/>
-        <div className="w-full h-[45em] grid grid-cols-12 grid-rows-12 ">
+        <div className="w-full h-[65em] md:h-[45em] flex flex-col md:flex-none md:grid grid-cols-12 grid-rows-12 ">
             <h1 className="row-start-1 col-start-1 col-span-full text-7xl text-center miltonian mt-3">About Us</h1>
+            <Image src={image_medley} className="visible md:invisible row-start-2 mx-auto w-full h-auto p-2" alt="Medley of images" />
             <p className="row-start-3 col-start-4 col-end-10 row-span-full text-md font-light lexend text-1xl p-3">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -44,9 +46,9 @@ export default function Home() {
                 <br />
                 <Link href="\about" className="lexend text-1xl underline">Check out More</Link>
             </p>
-            <Image src={hard_at_work} className="col-start-1 col-end-4 row-start-2 row-end-6 w-full h-auto p-2" alt="A picture of the SEC members hard at work" />
-            <Image src={club_board} className="w-full h-auto col-start-1 col-end-4 row-start-8 row-span-full p-2" alt="A picture of the SEC club board" />
-            <Image src={funny_faces} className="w-full h-auto row-start-2 row-end-6 col-start-10 col-span-full p-2" alt="A picture of the SEC members making funny faces" />
+            <Image src={hard_at_work} className="invisible md:visible col-start-1 col-end-4 row-start-2 row-end-6 w-full h-auto p-2" alt="A picture of the SEC members hard at work" />
+            <Image src={club_board} className="invisible md:visible w-full h-auto col-start-1 col-end-4 row-start-8 row-span-full p-2" alt="A picture of the SEC club board" />
+            <Image src={funny_faces} className="invisible md:visible w-full h-auto row-start-2 row-end-6 col-start-10 col-span-full p-2" alt="A picture of the SEC members making funny faces" />
         </div>
     </div>
     );
