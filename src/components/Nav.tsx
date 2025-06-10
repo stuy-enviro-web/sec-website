@@ -27,10 +27,10 @@ export default function Nav() {
             <Image src={logo} alt="The logo of the Stuyvesant Environmental Club" className="h-12 w-12" />
         </Link>
         <div className="invisible md:visible col-start-3 lg:col-start-5 text-[1em] sm:text-[1.1em] lg:text-[1.25em] font-bold col-end-11 flex flex-row justify-between">
-            <Link href={'/about'} className="text-white flex justify-center flex-col">About</Link>
-            <Link href={'/requirements'} className="text-white flex justify-center flex-col">Requirements</Link>
-            <Link href={'/events'} className="text-white flex justify-center flex-col">Events</Link>
-            <Link href={'/resources'} className="text-white flex justify-center flex-col">Resources</Link>
+            <Link href={'/about'} className="lexend text-white flex justify-center flex-col">About</Link>
+            <Link href={'/requirements'} className="lexend text-white flex justify-center flex-col">Requirements</Link>
+            <Link href={'/events'} className="lexend text-white flex justify-center flex-col">Events</Link>
+            <Link href={'/resources'} className="lexend text-white flex justify-center flex-col">Resources</Link>
         </div>
         <button onClick={toggleDarkMode} className="col-start-11 md:col-start-12 row-start-1">
             {mounted && <Image src={resolvedTheme === "dark" ? sun : moon} className="h-9 w-9 dark:invert invert " alt={resolvedTheme === "dark" ? "Sun emoji, clicking will give light mode" : "Moon emoji, clicking will give dark mode"} />}
@@ -41,10 +41,10 @@ export default function Nav() {
         </button>
 
         {dropdownOpen && <div className="absolute right-1 p-3 top-[4.1em] bg-browndark z-50">
-            <Link onClick={() => setDropdownOpen(false)} href={'/about'} className="block text-xl text-white">About</Link>
-            <Link onClick={() => setDropdownOpen(false)} href={'/requirements'} className="block text-xl text-white">Requirements</Link>
-            <Link onClick={() => setDropdownOpen(false)} href={'/events'} className="block text-xl text-white">Events</Link>
-            <Link onClick={() => setDropdownOpen(false)} href={'/resources'} className="block text-xl text-white">Resources</Link>
+            <Link onClick={() => setDropdownOpen(false)} href={'/about'} className="lexend block text-xl text-white">About</Link>
+            <Link onClick={() => setDropdownOpen(false)} href={'/requirements'} className="lexend block text-xl text-white">Requirements</Link>
+            <Link onClick={() => setDropdownOpen(false)} href={'/events'} className="lexend block text-xl text-white">Events</Link>
+            <Link onClick={() => setDropdownOpen(false)} href={'/resources'} className="lexend block text-xl text-white">Resources</Link>
         </div>}
     </nav>)
 }

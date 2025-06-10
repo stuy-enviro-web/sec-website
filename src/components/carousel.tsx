@@ -33,7 +33,7 @@ export default function Carousel() {
                 {/* Slide 1 */}
                 <div className="min-w-full h-full bg-gray-50">
                     <div className="text-center h-full w-full grid grid-cols-12 grid-rows-12">
-                        <h2 className="mt-4 sm:mt-0 z-1 bg-opacity-50 col-start-2 row-start-1 sm:row-start-2 text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold mb-4 text-left whitespace-break-spaces md:whitespace-nowrap" style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.1)" }}>
+                        <h2 className="miltonian mt-4 sm:mt-0 z-1 bg-opacity-50 col-start-2 row-start-1 sm:row-start-2 text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold mb-4 text-left whitespace-break-spaces md:whitespace-nowrap" style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.1)" }}>
                             The Stuyvesant <br />
                             <span style={{ color: "#0070FF" }}>Environmental</span><br />
                             <span style={{ color: "#00C87B" }}>Club</span>
