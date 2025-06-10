@@ -1,14 +1,15 @@
 import AboutUsSplash from "public/media/about_us_splash.png";
 import Image from "next/image";
 import ArrowRight from "public/arrow_right.svg";
-import Link from "next/link";
+import PersonBox from "@/components/PersonBox";
+import Doge from "public/media/DogeBoy.png";
 
 export default function about() {
     return (<div>
-        <div className="h-[47em] w-full grid grid-cols-12 grid-rows-12">
+        <div className="h-[45em] w-full grid grid-cols-12 grid-rows-12">
             <h1 className="col-start-2  col-span-full row-start-10 z-1 text-white miltonian text-5xl">About Us</h1>
             <div className="h-full w-full flex items-center justify-center col-start-1 col-span-full row-start-1 row-span-full">
-                <Image src={AboutUsSplash} className="w-auto h-full lg:w-full lg:h-auto b-2 object-cover object-center" alt="2015-2016 Arbor Day Event" style={{ maxHeight: '100%', maxWidth: '100%' }} />
+                <Image src={AboutUsSplash} className="w-auto h-full md:w-full xl:w-full md:h-full xl:h-auto object-cover object-center" alt="2015-2016 Arbor Day Event" style={{ maxHeight: '100%', maxWidth: '100%' }} />
             </div>
         </div>
         <div className="grid grid-cols-12 grid-rows-12 items-center justify-center w-full h-[45em] p-8">
@@ -44,6 +45,23 @@ export default function about() {
             <h1 className="miltonian text-7xl">
                 Leaders
             </h1>
+            <h1 className="miltonian text-5xl">
+                Cabinet
+            </h1>
+            <div className="flex flex-row items-center justify-center w-full h-fit">
+                <PersonBox
+                    className="w-full h-fit p-4"
+                    image={Doge}
+                    name="Dogeboy" position="Sigma sigma"
+                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                />
+                <PersonBox
+                    className="w-full h-fit p-4"
+                    image={Doge}
+                    name="Dogeboy" position="Sigma sigma"
+                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                />
+            </div>
         </div>
     </div>);
 }
