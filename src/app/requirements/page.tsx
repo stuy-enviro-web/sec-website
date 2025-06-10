@@ -23,7 +23,6 @@ export default function requirements() {
                     Requirements
                 </h3>
                 <Image src={ArrowRight} className="invert group-hover:translate-x-1 -translate-x-1 w-10 h-10 inline ml-2" alt="Arrow pointing right" />
-
             </a>
 
             <a href="#faq" className="hover:underline group col-start-2 row-start-10 col-span-full items-center flex flex-row justify-left z-10">
