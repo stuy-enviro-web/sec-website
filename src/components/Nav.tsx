@@ -28,7 +28,6 @@ export default function Nav() {
         </Link>
         <div className="invisible md:visible col-start-3 lg:col-start-5 text-[1em] sm:text-[1.1em] lg:text-[1.25em] font-bold col-end-11 flex flex-row justify-between">
             <Link href={'/about'} className="text-white flex justify-center flex-col">About</Link>
-            <Link href={'/materials'} className="text-white flex justify-center flex-col">Materials</Link>
             <Link href={'/requirements'} className="text-white flex justify-center flex-col">Requirements</Link>
             <Link href={'/events'} className="text-white flex justify-center flex-col">Events</Link>
             <Link href={'/resources'} className="text-white flex justify-center flex-col">Resources</Link>
@@ -42,11 +41,10 @@ export default function Nav() {
         </button>
 
         {dropdownOpen && <div className="absolute right-1 p-3 top-[4.1em] bg-browndark z-50">
-            <Link onClick={() => setDropdownOpen(false) }href={'/about'} className="block text-xl text-white">About</Link>
-            <Link onClick={() => setDropdownOpen(false) }href={'/materials'} className="block text-xl text-white">Materials</Link>
-            <Link onClick={() => setDropdownOpen(false) }href={'/requirements'} className="block text-xl text-white">Requirements</Link>
-            <Link onClick={() => setDropdownOpen(false) }href={'/events'} className="block text-xl text-white">Events</Link>
-            <Link onClick={() => setDropdownOpen(false) }href={'/resources'} className="block text-xl text-white">Resources</Link>
+            <Link onClick={() => setDropdownOpen(false)} href={'/about'} className="block text-xl text-white">About</Link>
+            <Link onClick={() => setDropdownOpen(false)} href={'/requirements'} className="block text-xl text-white">Requirements</Link>
+            <Link onClick={() => setDropdownOpen(false)} href={'/events'} className="block text-xl text-white">Events</Link>
+            <Link onClick={() => setDropdownOpen(false)} href={'/resources'} className="block text-xl text-white">Resources</Link>
         </div>}
     </nav>)
 }

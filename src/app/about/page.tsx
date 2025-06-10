@@ -48,15 +48,56 @@ export default function about() {
             <h1 className="miltonian text-5xl">
                 Cabinet
             </h1>
-            <div className="flex flex-row items-center justify-center w-full h-fit">
+            <div className="flex flex-row items-center justify-center w-full h-fit flex-wrap">
                 <PersonBox
-                    className="w-full h-fit p-4"
+                    className="w-[40rem] h-fit p-4 min-w-[40rem]"
                     image={Doge}
                     name="Dogeboy" position="Sigma sigma"
                     description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                 />
                 <PersonBox
-                    className="w-full h-fit p-4"
+                    className="w-[40rem] h-fit p-4 min-w-[40rem]"
+                    image={Doge}
+                    name="Dogeboy" position="Sigma sigma"
+                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                />
+                <PersonBox
+                    className="w-[40rem] h-fit p-4 min-w-[40rem]"
+                    image={Doge}
+                    name="Dogeboy" position="Sigma sigma"
+                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                />
+                <PersonBox
+                    className="w-[40rem] h-fit p-4 min-w-[40rem]"
+                    image={Doge}
+                    name="Dogeboy" position="Sigma sigma"
+                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                />
+            </div>
+            <h1 className="miltonian text-5xl">
+                Department Heads
+            </h1>
+            <div className="flex flex-row items-center justify-center w-full h-fit flex-wrap">
+                <PersonBox
+                    className="w-[40rem] h-fit p-4 min-w-[40rem]"
+                    image={Doge}
+                    name="Dogeboy" position="Sigma sigma"
+                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                />
+                <PersonBox
+                    className="w-[40rem] h-fit p-4 min-w-[40rem]"
+                    image={Doge}
+                    name="Dogeboy" position="Sigma sigma"
+                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                />
+                <PersonBox
+                    className="w-[40rem] h-fit p-4 min-w-[40rem]"
+                    image={Doge}
+                    name="Dogeboy" position="Sigma sigma"
+                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                />
+                <PersonBox
+                    className="w-[40rem] h-fit p-4 min-w-[40rem]"
                     image={Doge}
                     name="Dogeboy" position="Sigma sigma"
                     description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
