@@ -18,10 +18,8 @@ export default function Nav() {
 
     // TODO FIX ME set the theme to light for now
     useEffect(() => {
-        if (mounted) {
-            setTheme("light");
-        }
-    }, [setTheme]);
+        setTheme("light");
+    }, [setTheme, mounted]);
 
     const toggleDarkMode = () => {
         setTheme(resolvedTheme === "dark" ? "light" : "dark")
