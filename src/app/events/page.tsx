@@ -18,7 +18,7 @@ export default function events() {
 
             <a
                 href="#upcoming"
-                className="group col-start-5 row-start-6 col-span-full flex items-center justify-start space-x-2 z-10
+                className="group col-start-2 sm:col-start-5 row-start-6 col-span-full flex items-center justify-start space-x-2 z-10
                                      transform transition-transform duration-300 ease-out
                                      hover:scale-105 hover:text-emerald-300 hover:underline"
             >
@@ -33,7 +33,7 @@ export default function events() {
             </a>
             <a
                 href="#opportunities"
-                className="group col-start-5 row-start-7 col-span-full flex items-center justify-start space-x-2 z-10
+                className="group col-start-2 sm:col-start-5 row-start-7 col-span-full flex items-center justify-start space-x-2 z-10
                                      transform transition-transform duration-300 ease-out
                                      hover:scale-105 hover:text-emerald-300 hover:underline"
             >
@@ -49,7 +49,7 @@ export default function events() {
 
             <a
                 href="#past"
-                className="group col-start-5 row-start-8 col-span-full flex items-center justify-start space-x-2 z-10
+                className="group col-start-2 sm:col-start-5 row-start-8 col-span-full flex items-center justify-start space-x-2 z-10
                                      transform transition-transform duration-300 ease-out
                                      hover:scale-105 hover:text-emerald-300 hover:underline"
             >
@@ -65,7 +65,7 @@ export default function events() {
 
             <a
                 href="#resources"
-                className="group col-start-5 row-start-9 col-span-full flex items-center justify-start space-x-2 z-10
+                className="group col-start-2 sm:col-start-5 row-start-9 col-span-full flex items-center justify-start space-x-2 z-10
                                      transform transition-transform duration-300 ease-out
                                      hover:scale-105 hover:text-emerald-300 hover:underline"
             >
