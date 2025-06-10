@@ -48,29 +48,248 @@ export default function events() {
             <Image src={onTheWall} className="absolute bg-black mix-blend-darken row-start-1 row-span-full object-cover h-full w-auto lg:w-full lg:h-auto col-start-1 col-span-full -z-10 inset-0" alt="The bottle cap mural made in 2016 at stuy that tells students to reduce, reuse, and recycle" />
         </div>
         <div className="w-full h-10" />
-        <div className="w-full h-[55em] grid grid-cols-12 grid-rows-12 ">
+        <div className="w-full flex flex-col h-fit grid-cols-none grid-rows-none md:flex-none md:h-[55em] md:grid md:grid-cols-12 md:grid-rows-12 ">
             <h1 className="miltonian col-start-1 col-span-full row-start-1 text-7xl text-left p-3">
                 Upcoming Events
             </h1>
+            <Image src={bottleCapMural} className="rounded-2xl col-start-6 row-start-3 overflow-hidden p-3 col-span-full row-span-full object-cover w-full h-auto" alt="The school board that SEC uses, which displays a chinese lunar new year thing in this image along with some other stuff" />
+            <div
+                className="flex flex-col col-start-1 col-end-6 row-start-3 row-span-full p-3 overflow-y-auto"
+            >
+                {[
+                    {
+                        date: "May 10, 2024",
+                        title: "Sustainability Workshop",
+                        description:
+                            "Join us for an interactive workshop on eco-friendly practices and learn how to reduce your carbon footprint.",
+                        link: "/events/sustainability-workshop",
+                    },
+                    {
+                        date: "May 10, 2024",
+                        title: "Sustainability Workshop",
+                        description:
+                            "Join us for an interactive workshop on eco-friendly practices and learn how to reduce your carbon footprint.",
+                        link: "/events/sustainability-workshop",
+                    }, {
+                        date: "May 10, 2024",
+                        title: "Sustainability Workshop",
+                        description:
+                            "Join us for an interactive workshop on eco-friendly practices and learn how to reduce your carbon footprint.",
+                        link: "/events/sustainability-workshop",
+                    },
+                    {
+                        date: "June 2, 2024",
+                        title: "Community Cleanup",
+                        description:
+                            "Help beautify our neighborhood! Meet at the main gate and we'll supply gloves and bags.",
+                        link: "/events/community-cleanup",
+                    },
+                    {
+                        date: "July 18, 2024",
+                        title: "Recycling Fair",
+                        description:
+                            "Discover recycling tips, local vendors, and fun activities for kids at our annual fair.",
+                        link: "/events/recycling-fair",
+                    },
+                    // …more events
+                ].map((event, index) => (
+                    <div key={index}>
+                        <div
+                            className="bg-white rounded-lg shadow-md p-6 mb-8 hover:shadow-lg transition-shadow"
+                        >
+                            <p className="lexend text-gray-500 text-sm">{event.date}</p>
+                            <h3 className="miltonian mt-1 text-2xl font-semibold">
+                                {event.title}
+                            </h3>
+                            <p className="lexend mt-3 text-gray-700">
 
-            <Image src={bottleCapMural} className="col-start-6 row-start-3 overflow-hidden p-3 col-span-full row-end-11 object-cover w-full h-auto" alt="The school board that SEC uses, which displays a chinese lunar new year thing in this image along with some other stuff" />
+                                {event.description}
+                            </p>
+
+                            <a
+                                href={event.link}
+                                className="mt-4 inline-flex items-center text-blue-600 hover:underline"
+                            >
+                                Learn More
+                                <Image
+                                    src={ArrowRight}
+                                    alt="arrow"
+                                    className="ml-2 w-5 h-5"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                ))}
+            </div>
+
         </div>
 
         <div className="w-full h-10" />
-        <div className="w-full h-[55em] grid grid-cols-12 grid-rows-12 ">
+        <div className="w-full h-fit grid-cols-none grid-rows-none flex flex-col md:flex-none md:h-[55em] md:grid md:grid-cols-12 md:grid-rows-12 ">
             <h1 className="miltonian col-start-1 col-span-full row-start-1 text-7xl text-left p-3">
                 Past Events
             </h1>
+            <Image src={poster} className="rounded-2xl col-start-6 row-start-3 overflow-hidden p-3 col-span-full row-span-full object-cover w-full h-auto" alt="The school board that SEC uses, which displays a chinese lunar new year thing in this image along with some other stuff" />
 
-            <Image src={poster} className="col-start-6 row-start-3 overflow-hidden p-3 col-span-full row-end-11 object-cover w-full h-auto" alt="The school board that SEC uses, which displays a chinese lunar new year thing in this image along with some other stuff" />
+            <div
+                className="flex flex-col col-start-1 col-end-6 row-start-3 row-span-full p-3 overflow-y-auto"
+            >
+                {[
+                    {
+                        date: "May 10, 2024",
+                        title: "Sustainability Workshop",
+                        description:
+                            "Join us for an interactive workshop on eco-friendly practices and learn how to reduce your carbon footprint.",
+                        link: "/events/sustainability-workshop",
+                    },
+                    {
+                        date: "May 10, 2024",
+                        title: "Sustainability Workshop",
+                        description:
+                            "Join us for an interactive workshop on eco-friendly practices and learn how to reduce your carbon footprint.",
+                        link: "/events/sustainability-workshop",
+                    },
+                    {
+                        date: "May 10, 2024",
+                        title: "Sustainability Workshop",
+                        description:
+                            "Join us for an interactive workshop on eco-friendly practices and learn how to reduce your carbon footprint.",
+                        link: "/events/sustainability-workshop",
+                    }, {
+
+                        date: "May 10, 2024",
+                        title: "Sustainability Workshop",
+                        description:
+                            "Join us for an interactive workshop on eco-friendly practices and learn how to reduce your carbon footprint.",
+                        link: "/events/sustainability-workshop",
+                    },
+                    {
+                        date: "June 2, 2024",
+                        title: "Community Cleanup",
+                        description:
+                            "Help beautify our neighborhood! Meet at the main gate and we'll supply gloves and bags.",
+                        link: "/events/community-cleanup",
+                    },
+                    {
+                        date: "July 18, 2024",
+                        title: "Recycling Fair",
+                        description:
+                            "Discover recycling tips, local vendors, and fun activities for kids at our annual fair.",
+                        link: "/events/recycling-fair",
+                    },
+                    // …more events
+                ].map((event, index) => (
+                    <div key={index}>
+                        <div
+                            className="bg-white rounded-lg shadow-md p-6 mb-8 hover:shadow-lg transition-shadow"
+                        >
+                            <p className="lexend text-gray-500 text-sm">{event.date}</p>
+                            <h3 className="miltonian mt-1 text-2xl font-semibold">
+                                {event.title}
+                            </h3>
+                            <p className="lexend mt-3 text-gray-700">
+
+                                {event.description}
+                            </p>
+
+                            <a
+                                href={event.link}
+                                className="mt-4 inline-flex items-center text-blue-600 hover:underline"
+                            >
+                                Learn More
+                                <Image
+                                    src={ArrowRight}
+                                    alt="arrow"
+                                    className="ml-2 w-5 h-5"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                ))}
+            </div>
         </div>
 
-        <div className="w-full h-[55em] grid grid-cols-12 grid-rows-12 ">
+        <div className="w-full h-fit flex flex-col grid-cols-none grid-rows-none md:flex-none md:h-[55em] md:grid md:grid-cols-12 md:grid-rows-12 ">
             <h1 className="miltonian col-start-1 col-span-full row-start-1 text-7xl text-left p-3">
                 Opportunities
             </h1>
+            <Image src={turtles} className="rounded-2xl col-start-6 row-start-3 overflow-hidden p-3 col-span-full row-span-full object-cover w-full h-auto" alt="The school board that SEC uses, which displays a chinese lunar new year thing in this image along with some other stuff" />
+            <div
+                className="flex flex-col col-start-1 col-end-6 row-start-3 row-span-full p-3 overflow-y-auto"
+            >
+                {[
+                    {
+                        date: "May 10, 2024",
+                        title: "Sustainability Workshop",
+                        description:
+                            "Join us for an interactive workshop on eco-friendly practices and learn how to reduce your carbon footprint.",
+                        link: "/events/sustainability-workshop",
+                    },
+                    {
+                        date: "May 10, 2024",
+                        title: "Sustainability Workshop",
+                        description:
+                            "Join us for an interactive workshop on eco-friendly practices and learn how to reduce your carbon footprint.",
+                        link: "/events/sustainability-workshop",
+                    },
+                    {
+                        date: "May 10, 2024",
+                        title: "Sustainability Workshop",
+                        description:
+                            "Join us for an interactive workshop on eco-friendly practices and learn how to reduce your carbon footprint.",
+                        link: "/events/sustainability-workshop",
+                    }, {
 
-            <Image src={turtles} className="col-start-6 row-start-3 overflow-hidden p-3 col-span-full row-end-11 object-cover w-full h-auto" alt="The school board that SEC uses, which displays a chinese lunar new year thing in this image along with some other stuff" />
+                        date: "May 10, 2024",
+                        title: "Sustainability Workshop",
+                        description:
+                            "Join us for an interactive workshop on eco-friendly practices and learn how to reduce your carbon footprint.",
+                        link: "/events/sustainability-workshop",
+                    },
+                    {
+                        date: "June 2, 2024",
+                        title: "Community Cleanup",
+                        description:
+                            "Help beautify our neighborhood! Meet at the main gate and we'll supply gloves and bags.",
+                        link: "/events/community-cleanup",
+                    },
+                    {
+                        date: "July 18, 2024",
+                        title: "Recycling Fair",
+                        description:
+                            "Discover recycling tips, local vendors, and fun activities for kids at our annual fair.",
+                        link: "/events/recycling-fair",
+                    },
+                    // …more events
+                ].map((event, index) => (
+                    <div key={index}>
+                        <div
+                            className="bg-white rounded-lg shadow-md p-6 mb-8 hover:shadow-lg transition-shadow"
+                        >
+                            <p className="lexend text-gray-500 text-sm">{event.date}</p>
+                            <h3 className="miltonian mt-1 text-2xl font-semibold">
+                                {event.title}
+                            </h3>
+                            <p className="lexend mt-3 text-gray-700">
+
+                                {event.description}
+                            </p>
+
+                            <a
+                                href={event.link}
+                                className="mt-4 inline-flex items-center text-blue-600 hover:underline"
+                            >
+                                Learn More
+                                <Image
+                                    src={ArrowRight}
+                                    alt="arrow"
+                                    className="ml-2 w-5 h-5"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                ))}
+            </div>
         </div>
     </div>);
 }
