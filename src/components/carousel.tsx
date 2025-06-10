@@ -3,6 +3,10 @@ import { useState } from 'react';
 import Image from 'next/image';
 import fullsizerender from "public/media/cut_arbor_full.png"
 import Link from 'next/link';
+import ArrowRight from "public/arrow_right.svg";
+
+import gardening_2022 from "public/media/gardening_2022.webp";
+import gardening_2023 from "public/media/garden_2023.jpg";
 
 
 
@@ -38,29 +42,87 @@ export default function Carousel() {
                             <span style={{ color: "#0070FF" }}>Environmental</span><br />
                             <span style={{ color: "#00C87B" }}>Club</span>
                         </h2>
-                        <Link href="\about " className="z-1 col-start-2 row-start-12 text-2xl font-semibold mb-4 text-left whitespace-nowrap" style={{ textShadow: "1px 1px 2px rgba(0,0,0,0.1)" }}>
-                            Check out more about us!
+                        <Link
+                            href="/about"
+                            className="group col-start-2 row-start-9 col-span-full flex items-center justify-start space-x-2 z-10
+                                     transform transition-transform duration-300 ease-out text-black
+                                     hover:scale-105 hover:text-emerald-50 hover:underline"
+                        >
+                            <h3 className="lexend text-2xl text-black transition-colors duration-300 group-hover:text-emerald-50">
+                                Check out more about us
+                            </h3>
+                            <Image
+                                src={ArrowRight}
+                                alt="Arrow pointing right"
+                                className="w-10 h-10 transition-transform duration-300 group-hover:translate-x-2"
+                            />
                         </Link>
                         <div className="h-full w-full flex items-center justify-center col-start-1 col-span-full row-start-1 row-span-full">
-                            <Image src={fullsizerender} className="w-auto h-full lg:w-full lg:h-auto b-2 opacity-75 object-cover object-center" alt="2015-2016 Arbor Day Event" style={{maxHeight: '100%', maxWidth: '100%'}} />
+                            <Image src={fullsizerender} className="w-auto h-full lg:w-full lg:h-auto b-2 opacity-75 object-cover object-center" alt="2015-2016 Arbor Day Event" style={{ maxHeight: '100%', maxWidth: '100%' }} />
                         </div>
                     </div>
                 </div>
                 {/* Slide 2 */}
-                <div className="min-w-full h-full flex items-center justify-center bg-green-100">
-                    <div className="text-center p-8">
-                        <h2 className="text-4xl font-bold mb-4">Our Services</h2>
-                        <p className="text-xl">Second carousel element</p>
-                    </div>
+
+                <div className="min-w-full h-full grid grid-cols-12 grid-rows-12 relative">
+                    <h1 className="text-8xl col-start-3 col-span-full row-start-3  font-bold text-white z-1 miltonian mb-4">
+                        Events!
+                    </h1>
+                    <Link
+                        href="/events"
+                        className="group col-start-2 row-start-9 col-span-full flex items-center justify-start space-x-2 z-10
+                                     transform transition-transform duration-300 ease-out text-white
+                                     hover:scale-105 hover:text-emerald-50 hover:underline"
+                    >
+                        <h3 className="lexend text-2xl text-white transition-colors duration-300 group-hover:text-emerald-200">
+                            See what we do
+                        </h3>
+                        <Image
+                            src={ArrowRight}
+                            alt="Arrow pointing right"
+                            className="w-10 h-10 invert transition-transform duration-300 group-hover:translate-x-2"
+                        />
+                    </Link>
+                    <Image
+                        src={gardening_2022}
+                        alt="SEC Gardening 2022"
+                        fill
+                        className="object-cover col-start-1 col-span-full row-start-1 row-span-full z-0"
+                    />
+
+                    <div className="col-start-1 col-span-full row-start-1 row-span-full inset-0 bg-black opacity-40" />
                 </div>
 
                 {/* Slide 3 */}
-                <div className="min-w-full h-full flex items-center justify-center bg-purple-100">
-                    <div className="text-center p-8">
-                        <h2 className="text-4xl font-bold mb-4">Contact Us</h2>
-                        <p className="text-xl">Third carousel element</p>
-                    </div>
+                <div className="min-w-full h-full grid grid-cols-12 grid-rows-12 relative">
+                    <h1 className="text-8xl col-start-3 col-span-full row-start-3  font-bold text-white z-1 miltonian mb-4">
+                        Resources!
+                    </h1>
+                    <Link
+                        href="/resources"
+                        className="group col-start-2 row-start-9 col-span-full flex items-center justify-start space-x-2 z-10
+                                     transform transition-transform duration-300 ease-out text-white
+                                     hover:scale-105 hover:text-emerald-50 hover:underline"
+                    >
+                        <h3 className="lexend text-2xl text-white transition-colors duration-300 group-hover:text-cyan-400">
+                            Look at what we have
+                        </h3>
+                        <Image
+                            src={ArrowRight}
+                            alt="Arrow pointing right"
+                            className="w-10 h-10 invert transition-transform duration-300 group-hover:translate-x-2"
+                        />
+                    </Link>
+                    <Image
+                        src={gardening_2023}
+                        alt="SEC Gardening 2022"
+                        fill
+                        className="object-cover col-start-1 col-span-full row-start-1 row-span-full z-0"
+                    />
+
+                    <div className="col-start-1 col-span-full row-start-1 row-span-full inset-0 bg-black opacity-40" />
                 </div>
+
             </div>
 
             {/* Navigation arrows */}

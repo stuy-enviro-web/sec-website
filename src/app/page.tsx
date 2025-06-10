@@ -24,11 +24,46 @@ export default function Home() {
             <h3>
                 Find us on
             </h3>
-            <div className="flex justify-between w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 mt-2 ">
-                <a href="https://epsilon.stuysu.org/SEC"><Image className="w-10 h-auto transition-transform hover:scale-105 hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none" src={su_logo} alt="SU Logo and Link to the SU website" /></a>
-                <a href="https://discord.gg/N8GUFcAZPJ"><Image className="w-10 h-auto transition-transform hover:scale-105 hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none" src={discord_logo} alt="Discord Logo and Link to the SEC discord page" /></a>
-                <a href="https://www.instagram.com/stuyenviroclub"><Image className="w-10 h-auto transition-transform hover:scale-105 hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none" src={instagram_logo} alt="Instagram Logo and Link to the SEC insta page" /></a>
-                <a href="https://www.facebook.com/groups/281609128612255"><Image className="w-10 h-auto transition-transform hover:scale-105 hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none" src={facebook_logo} alt="Facebook Logo and Link to the SEC facebook page" /></a>
+            <div className="flex justify-between w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 mt-2">
+                {[
+                    {
+                        href: "https://epsilon.stuysu.org/SEC",
+                        src: su_logo,
+                        alt: "SU Logo and Link to the SU website",
+                    },
+                    {
+                        href: "https://discord.gg/N8GUFcAZPJ",
+                        src: discord_logo,
+                        alt: "Discord Logo and Link to the SEC discord page",
+                    },
+                    {
+                        href: "https://www.instagram.com/stuyenviroclub",
+                        src: instagram_logo,
+                        alt: "Instagram Logo and Link to the SEC insta page",
+                    },
+                    {
+                        href: "https://www.facebook.com/groups/281609128612255",
+                        src: facebook_logo,
+                        alt: "Facebook Logo and Link to the SEC facebook page",
+                    },
+                ].map((icon, i) => (
+                    <a
+                        key={i}
+                        href={icon.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group relative w-10 h-10 transform transition duration-500 ease-in-out hover:scale-110 hover:-translate-y-2 hover:rotate-3"
+                    >
+                        {/* glowing halo */}
+                        <span className="absolute inset-0 rounded-full bg-cyan-400 opacity-0 blur-md group-hover:opacity-30 transition-opacity duration-300" />
+                        {/* icon */}
+                        <Image
+                            src={icon.src}
+                            alt={icon.alt}
+                            className="relative w-full h-auto object-contain drop-shadow-lg"
+                        />
+                    </a>
+                ))}
             </div>
         </div>
         <UpcomingEvents />
