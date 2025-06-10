@@ -13,12 +13,12 @@ import Image from "next/image";
 export default function requirements() {
     return (<div>
         <div className="h-[48em] w-full grid grid-cols-12 grid-rows-12">
-            <h1 className="miltonian col-start-2 col-span-full row-start-3  text-7xl text-white ">Club Requirements</h1>
-            <p className="lexend  col-start-2 col-end-7 row-start-5 text-2xl font-light text-white">
+            <h1 className="miltonian col-start-1  text-center sm:text-left sm:col-start-2  col-span-full row-start-2 md:row-start-3 text-3xl sm:text-5xl md:text-7xl text-white z-10">Club Requirements</h1>
+            <p className="lexend col-start-2 col-end-12 sm:col-end-10 md:col-end-7 row-start-3 md:row-start-5 text-xl sm:text-2xl font-light text-white z-10">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
-            <a href="#requirements" className="hover:underline group col-start-2 row-start-9 col-span-full items-center flex flex-row justify-left">
+            <a href="#requirements" className="hover:underline group col-start-2 row-start-9 col-span-full items-center flex flex-row justify-left z-10">
                 <h3 className="lexend text-3xl group-hover:translate-x-1 text-white">
                     Requirements
                 </h3>
@@ -26,13 +26,14 @@ export default function requirements() {
 
             </a>
 
-            <a href="#faq" className="hover:underline group col-start-2 row-start-10 col-span-full items-center flex flex-row justify-left">
+            <a href="#faq" className="hover:underline group col-start-2 row-start-10 col-span-full items-center flex flex-row justify-left z-10">
                 <h3 className="group-hover:translate-x-1 lexend text-3xl text-white">
                     FAQ
                 </h3>
                 <Image src={ArrowRight} className="invert group-hover:translate-x-1 -translate-x-1 w-10 h-10 inline ml-2" alt="Arrow pointing right" />
             </a>
-            <Image src={BOP2017} className="-z-1 object-cover col-start-1 col-span-full row-start-1 row-span-full opacity-85 w-full h-full" alt="SEC at work from 2017-2018 at the Billion Oyster Project" />
+            <div className="col-start-1 col-span-full row-start-1 row-span-full bg-black opacity-50 z-0"></div>
+            <Image src={BOP2017} className="-z-10 object-cover col-start-1 col-span-full row-start-1 row-span-full opacity-85 w-full h-full" alt="SEC at work from 2017-2018 at the Billion Oyster Project" />
         </div>
         <div className="w-full h-10 " />
 
@@ -64,7 +65,7 @@ export default function requirements() {
             </div>
             <Image src={green_team} className="mt-4 mb-4 md:mt-0 md:mb-0 w-full h-full object-cover col-start-1 col-end-6 row-start-7 row-end-12 p-2" alt="SEC members working at Green Team 2023" />
         </div>
-        
+
         <div className="grid-none grid-cols-none grid-rows-none flex flex-col md:flex-none md:grid md:grid-cols-12 md:grid-rows-12 items-center justify-center w-full h-fit md:h-[50rem] p-8">
             <div id="faq" className="miltonian row-start-1 col-start-1 col-span-full text-5xl text-center">
                 FAQ
