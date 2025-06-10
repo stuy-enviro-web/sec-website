@@ -16,6 +16,13 @@ export default function Nav() {
     const [dropdownOpen, setDropdownOpen] = useState(false)
     const { setTheme, resolvedTheme } = useTheme()
 
+    // TODO FIX ME set the theme to light for now
+    useEffect(() => {
+        if (mounted) {
+            setTheme("light");
+        }
+    }, [setTheme]);
+
     const toggleDarkMode = () => {
         setTheme(resolvedTheme === "dark" ? "light" : "dark")
     }
