@@ -64,9 +64,7 @@ export default function requirements() {
             </div>
             <Image src={green_team} className="mt-4 mb-4 md:mt-0 md:mb-0 w-full h-full object-cover col-start-1 col-end-6 row-start-7 row-end-12 p-2" alt="SEC members working at Green Team 2023" />
         </div>
-
-
-        <div className="w-full h-10" />
+        
         <div className="grid-none grid-cols-none grid-rows-none flex flex-col md:flex-none md:grid md:grid-cols-12 md:grid-rows-12 items-center justify-center w-full h-fit md:h-[50rem] p-8">
             <div id="faq" className="miltonian row-start-1 col-start-1 col-span-full text-5xl text-center">
                 FAQ
