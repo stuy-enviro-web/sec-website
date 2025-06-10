@@ -16,32 +16,67 @@ export default function events() {
                 EVENTS!
             </h1>
 
-            <a href="#upcoming" className="hover:underline group col-start-5 row-start-6 col-span-full items-center flex flex-row justify-left z-10">
-                <h3 className="lexend text-4xl md:text-5xl group-hover:translate-x-1 text-white">
+            <a
+                href="#upcoming"
+                className="group col-start-5 row-start-6 col-span-full flex items-center justify-start space-x-2 z-10
+                                     transform transition-transform duration-300 ease-out
+                                     hover:scale-105 hover:text-emerald-300 hover:underline"
+            >
+                <h3 className="lexend text-4xl md:text-5xl text-white transition-colors duration-300 group-hover:text-emerald-300">
                     Upcoming Events
                 </h3>
-                <Image src={ArrowRight} className=" invert group-hover:translate-x-1 -translate-x-1 w-10 h-10 inline ml-2" alt="Arrow pointing right" />
+                <Image
+                    src={ArrowRight}
+                    alt="Arrow pointing right"
+                    className="w-10 h-10 invert transition-transform duration-300 group-hover:translate-x-2"
+                />
             </a>
-
-            <a href="#opportunities" className="hover:underline group col-start-5 row-start-7 col-span-full items-center flex flex-row justify-left z-10">
-                <h3 className="lexend text-5xl group-hover:translate-x-1 text-white">
+            <a
+                href="#opportunities"
+                className="group col-start-5 row-start-7 col-span-full flex items-center justify-start space-x-2 z-10
+                                     transform transition-transform duration-300 ease-out
+                                     hover:scale-105 hover:text-emerald-300 hover:underline"
+            >
+                <h3 className="lexend text-5xl text-white transition-colors duration-300 group-hover:text-emerald-300">
                     Opportunities
                 </h3>
-                <Image src={ArrowRight} className=" invert group-hover:translate-x-1 -translate-x-1 w-10 h-10 inline ml-2" alt="Arrow pointing right" />
+                <Image
+                    src={ArrowRight}
+                    alt="Arrow pointing right"
+                    className="w-10 h-10 invert transition-transform duration-300 group-hover:translate-x-2"
+                />
             </a>
 
-            <a href="#past" className="hover:underline group col-start-5 row-start-8 col-span-full items-center flex flex-row justify-left z-10">
-                <h3 className="lexend text-5xl group-hover:translate-x-1 text-white">
+            <a
+                href="#past"
+                className="group col-start-5 row-start-8 col-span-full flex items-center justify-start space-x-2 z-10
+                                     transform transition-transform duration-300 ease-out
+                                     hover:scale-105 hover:text-emerald-300 hover:underline"
+            >
+                <h3 className="lexend text-5xl text-white transition-colors duration-300 group-hover:text-emerald-300">
                     Past Events
                 </h3>
-                <Image src={ArrowRight} className=" invert group-hover:translate-x-1 -translate-x-1 w-10 h-10 inline ml-2" alt="Arrow pointing right" />
+                <Image
+                    src={ArrowRight}
+                    alt="Arrow pointing right"
+                    className="w-10 h-10 invert transition-transform duration-300 group-hover:translate-x-2"
+                />
             </a>
 
-            <a href="#resources" className="hover:underline group col-start-5 row-start-9 col-span-full items-center flex flex-row justify-left z-10">
-                <h3 className="lexend text-5xl group-hover:translate-x-1 text-white">
+            <a
+                href="#resources"
+                className="group col-start-5 row-start-9 col-span-full flex items-center justify-start space-x-2 z-10
+                                     transform transition-transform duration-300 ease-out
+                                     hover:scale-105 hover:text-emerald-300 hover:underline"
+            >
+                <h3 className="lexend text-5xl text-white transition-colors duration-300 group-hover:text-emerald-300">
                     Resources
                 </h3>
-                <Image src={ArrowRight} className=" invert group-hover:translate-x-1 -translate-x-1 w-10 h-10 inline ml-2" alt="Arrow pointing right" />
+                <Image
+                    src={ArrowRight}
+                    alt="Arrow pointing right"
+                    className="w-10 h-10 invert transition-transform duration-300 group-hover:translate-x-2"
+                />
             </a>
             {/* Dark overlay */}
             <div className="absolute inset-0 bg-black opacity-60 z-0 pointer-events-none" />
