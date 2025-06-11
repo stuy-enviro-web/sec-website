@@ -28,9 +28,9 @@ export async function getSheetsData(
     const key = `${spreadsheetId}:${range}`;
     const now = Date.now();
 
-    // if cached and not older than 10s, return it
+    // if cached and not older than 20s, return it
     const entry = cache[key];
-    if (entry && now - entry.timestamp < 10_000) {
+    if (entry && now - entry.timestamp < 20_000) {
         return entry.data;
     }
 

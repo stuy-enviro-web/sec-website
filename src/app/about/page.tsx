@@ -1,8 +1,7 @@
 import AboutUsSplash from "public/media/about_us_splash.png";
 import Image from "next/image";
 import ArrowRight from "public/arrow_right.svg";
-import PersonBox from "@/components/PersonBox";
-import Doge from "public/media/DogeBoy.png";
+import AboutPageGallery from "@/components/AboutPageGallery";
 
 export default function about() {
     return (<div>
@@ -45,64 +44,7 @@ export default function about() {
             <h1 className="miltonian text-7xl">
                 Leaders
             </h1>
-            <h1 className="miltonian text-5xl">
-                Cabinet
-            </h1>
-            <div className="flex flex-row items-center justify-center w-full h-fit flex-wrap">
-                <PersonBox
-                    className="w-[40rem] h-fit p-4 min-w-[40rem]"
-                    image={Doge}
-                    name="Dogeboy" position="Sigma sigma"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                />
-                <PersonBox
-                    className="w-[40rem] h-fit p-4 min-w-[40rem]"
-                    image={Doge}
-                    name="Dogeboy" position="Sigma sigma"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                />
-                <PersonBox
-                    className="w-[40rem] h-fit p-4 min-w-[40rem]"
-                    image={Doge}
-                    name="Dogeboy" position="Sigma sigma"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                />
-                <PersonBox
-                    className="w-[40rem] h-fit p-4 min-w-[40rem]"
-                    image={Doge}
-                    name="Dogeboy" position="Sigma sigma"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                />
-            </div>
-            <h1 className="miltonian text-5xl">
-                Department Heads
-            </h1>
-            <div className="flex flex-row items-center justify-center w-full h-fit flex-wrap">
-                <PersonBox
-                    className="w-[40rem] h-fit p-4 min-w-[40rem]"
-                    image={Doge}
-                    name="Dogeboy" position="Sigma sigma"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                />
-                <PersonBox
-                    className="w-[40rem] h-fit p-4 min-w-[40rem]"
-                    image={Doge}
-                    name="Dogeboy" position="Sigma sigma"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                />
-                <PersonBox
-                    className="w-[40rem] h-fit p-4 min-w-[40rem]"
-                    image={Doge}
-                    name="Dogeboy" position="Sigma sigma"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                />
-                <PersonBox
-                    className="w-[40rem] h-fit p-4 min-w-[40rem]"
-                    image={Doge}
-                    name="Dogeboy" position="Sigma sigma"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                />
-            </div>
+            <AboutPageGallery />
         </div>
     </div>);
 }
