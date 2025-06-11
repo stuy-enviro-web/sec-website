@@ -38,6 +38,6 @@ export default async function HelpfulLinks() {
             )
         })}
 
-        <p className="font-light text-md">If you have any problems / concerns, please contact <a href={emailAddr}>{emailAddr}</a></p></>
+        <p className="font-light text-md">If you have any problems / concerns, please contact <a href={`mailto:${emailAddr}`}>{emailAddr}</a></p></>
     );
 }

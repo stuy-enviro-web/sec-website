@@ -55,8 +55,6 @@ export default function Home() {
                         rel="noopener noreferrer"
                         className="group relative w-10 h-10 transform transition duration-500 ease-in-out hover:scale-110 hover:-translate-y-2 hover:rotate-3"
                     >
-                        {/* glowing halo */}
-                        <span className="absolute inset-0 rounded-full bg-cyan-400 opacity-0 blur-md group-hover:opacity-30 transition-opacity duration-300" />
                         {/* icon */}
                         <Image
                             src={icon.src}

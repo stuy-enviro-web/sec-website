@@ -35,7 +35,7 @@ export default async function AboutPageGallery() {
     // 4) render
     return (
         <>
-            <h1 className="miltonian text-5xl">Cabinet</h1>
+            <h1 id="leaders" className="miltonian text-5xl">Cabinet</h1>
             <div className="flex flex-wrap justify-center gap-4">
                 {cabinet.map((l, i) => (
                     <PersonBox

@@ -6,6 +6,7 @@ import poster from "public/media/poster_2024.jpg";
 import turtles from "public/media/poster_turtle_2023.jpg";
 import Image from "next/image";
 import ArrowRight from "public/arrow_right.svg";
+import Link from "next/link";
 
 import EventsList from "@/components/UpcomingEventsList";
 import PastEventsList from "@/components/PastEventsList";
@@ -18,8 +19,8 @@ export default function events() {
                 EVENTS!
             </h1>
 
-            <a
-                href="#upcoming"
+            <Link
+                href="/events#upcoming"
                 className="group col-start-2 sm:col-start-5 row-start-6 col-span-full flex items-center justify-start space-x-2 z-10
                                      transform transition-transform duration-300 ease-out
                                      hover:scale-105 hover:text-emerald-300 hover:underline"
@@ -32,9 +33,9 @@ export default function events() {
                     alt="Arrow pointing right"
                     className="w-10 h-10 invert transition-transform duration-300 group-hover:translate-x-2"
                 />
-            </a>
-            <a
-                href="#opportunities"
+            </Link>
+            <Link
+                href="/events#opportunities"
                 className="group col-start-2 sm:col-start-5 row-start-7 col-span-full flex items-center justify-start space-x-2 z-10
                                      transform transition-transform duration-300 ease-out
                                      hover:scale-105 hover:text-emerald-300 hover:underline"
@@ -47,10 +48,10 @@ export default function events() {
                     alt="Arrow pointing right"
                     className="w-10 h-10 invert transition-transform duration-300 group-hover:translate-x-2"
                 />
-            </a>
+            </Link>
 
-            <a
-                href="#past"
+            <Link
+                href="/events#past"
                 className="group col-start-2 sm:col-start-5 row-start-8 col-span-full flex items-center justify-start space-x-2 z-10
                                      transform transition-transform duration-300 ease-out
                                      hover:scale-105 hover:text-emerald-300 hover:underline"
@@ -63,10 +64,10 @@ export default function events() {
                     alt="Arrow pointing right"
                     className="w-10 h-10 invert transition-transform duration-300 group-hover:translate-x-2"
                 />
-            </a>
+            </Link>
 
-            <a
-                href="#resources"
+            <Link
+                href="/resources"
                 className="group col-start-2 sm:col-start-5 row-start-9 col-span-full flex items-center justify-start space-x-2 z-10
                                      transform transition-transform duration-300 ease-out
                                      hover:scale-105 hover:text-emerald-300 hover:underline"
@@ -79,13 +80,13 @@ export default function events() {
                     alt="Arrow pointing right"
                     className="w-10 h-10 invert transition-transform duration-300 group-hover:translate-x-2"
                 />
-            </a>
+            </Link>
             {/* Dark overlay */}
             <div className="absolute inset-0 bg-black opacity-60 z-0 pointer-events-none" />
             <Image src={onTheWall} className="absolute bg-black mix-blend-darken row-start-1 row-span-full object-cover h-full w-auto lg:w-full lg:h-auto col-start-1 col-span-full -z-10 inset-0" alt="The bottle cap mural made in 2016 at stuy that tells students to reduce, reuse, and recycle" />
         </div>
         <div className="w-full h-10" />
-        <div className="w-full flex flex-col h-fit grid-cols-none grid-rows-none md:flex-none md:h-[55em] md:grid md:grid-cols-12 md:grid-rows-12 ">
+        <div id="upcoming" className="w-full flex flex-col h-fit grid-cols-none grid-rows-none md:flex-none md:h-[55em] md:grid md:grid-cols-12 md:grid-rows-12 ">
             <h1 className="miltonian col-start-1 col-span-full row-start-1 text-7xl text-left p-3">
                 Upcoming Events
             </h1>
@@ -93,13 +94,13 @@ export default function events() {
             <div
                 className="flex flex-col col-start-1 col-end-6 row-start-3 row-span-full p-3 overflow-y-auto"
             >
-               <EventsList />
+                <EventsList />
             </div>
 
         </div>
 
         <div className="w-full h-10" />
-        <div className="w-full h-fit grid-cols-none grid-rows-none flex flex-col md:flex-none md:h-[55em] md:grid md:grid-cols-12 md:grid-rows-12 ">
+        <div id="past" className="w-full h-fit grid-cols-none grid-rows-none flex flex-col md:flex-none md:h-[55em] md:grid md:grid-cols-12 md:grid-rows-12 ">
             <h1 className="miltonian col-start-1 col-span-full row-start-1 text-7xl text-left p-3">
                 Past Events
             </h1>
@@ -108,11 +109,11 @@ export default function events() {
             <div
                 className="flex flex-col col-start-1 col-end-6 row-start-3 row-span-full p-3 overflow-y-auto"
             >
-               <PastEventsList />
+                <PastEventsList />
             </div>
         </div>
 
-        <div className="w-full h-fit flex flex-col grid-cols-none grid-rows-none md:flex-none md:h-[55em] md:grid md:grid-cols-12 md:grid-rows-12 ">
+        <div id="opportunities" className="w-full h-fit flex flex-col grid-cols-none grid-rows-none md:flex-none md:h-[55em] md:grid md:grid-cols-12 md:grid-rows-12 ">
             <h1 className="miltonian col-start-1 col-span-full row-start-1 text-7xl text-left p-3">
                 Opportunities
             </h1>
