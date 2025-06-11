@@ -4,6 +4,9 @@ import Nav from "@/components/Nav";
 import Providers from "@/app/providers";
 import Footer from "@/components/Footer";
 
+import { Analytics } from "@vercel/analytics/next"
+
+
 export const metadata: Metadata = {
     title: "StuyEnviro",
     description: "The Stuyvesant Environmental Website",
@@ -33,7 +36,9 @@ export default function RootLayout({
                     <br />
                     <Footer />
                 </Providers>
+                <Analytics />
             </body>
+
         </html>
     );
 }
