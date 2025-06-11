@@ -7,7 +7,9 @@ import turtles from "public/media/poster_turtle_2023.jpg";
 import Image from "next/image";
 import ArrowRight from "public/arrow_right.svg";
 
-
+import EventsList from "@/components/UpcomingEventsList";
+import PastEventsList from "@/components/PastEventsList";
+import OpportunitiesList from "@/components/OpportunitiesList";
 
 export default function events() {
     return (<div>
@@ -91,70 +93,7 @@ export default function events() {
             <div
                 className="flex flex-col col-start-1 col-end-6 row-start-3 row-span-full p-3 overflow-y-auto"
             >
-                {[
-                    {
-                        date: "May 10, 2024",
-                        title: "Sustainability Workshop",
-                        description:
-                            "Join us for an interactive workshop on eco-friendly practices and learn how to reduce your carbon footprint.",
-                        link: "/events/sustainability-workshop",
-                    },
-                    {
-                        date: "May 10, 2024",
-                        title: "Sustainability Workshop",
-                        description:
-                            "Join us for an interactive workshop on eco-friendly practices and learn how to reduce your carbon footprint.",
-                        link: "/events/sustainability-workshop",
-                    }, {
-                        date: "May 10, 2024",
-                        title: "Sustainability Workshop",
-                        description:
-                            "Join us for an interactive workshop on eco-friendly practices and learn how to reduce your carbon footprint.",
-                        link: "/events/sustainability-workshop",
-                    },
-                    {
-                        date: "June 2, 2024",
-                        title: "Community Cleanup",
-                        description:
-                            "Help beautify our neighborhood! Meet at the main gate and we'll supply gloves and bags.",
-                        link: "/events/community-cleanup",
-                    },
-                    {
-                        date: "July 18, 2024",
-                        title: "Recycling Fair",
-                        description:
-                            "Discover recycling tips, local vendors, and fun activities for kids at our annual fair.",
-                        link: "/events/recycling-fair",
-                    },
-                    // …more events
-                ].map((event, index) => (
-                    <div key={index}>
-                        <div
-                            className="bg-white rounded-lg shadow-md p-6 mb-8 hover:shadow-lg transition-shadow"
-                        >
-                            <p className="lexend text-gray-500 text-sm">{event.date}</p>
-                            <h3 className="miltonian mt-1 text-2xl font-semibold">
-                                {event.title}
-                            </h3>
-                            <p className="lexend mt-3 text-gray-700">
-
-                                {event.description}
-                            </p>
-
-                            <a
-                                href={event.link}
-                                className="mt-4 inline-flex items-center text-blue-600 hover:underline"
-                            >
-                                Learn More
-                                <Image
-                                    src={ArrowRight}
-                                    alt="arrow"
-                                    className="ml-2 w-5 h-5"
-                                />
-                            </a>
-                        </div>
-                    </div>
-                ))}
+               <EventsList />
             </div>
 
         </div>
@@ -169,78 +108,7 @@ export default function events() {
             <div
                 className="flex flex-col col-start-1 col-end-6 row-start-3 row-span-full p-3 overflow-y-auto"
             >
-                {[
-                    {
-                        date: "May 10, 2024",
-                        title: "Sustainability Workshop",
-                        description:
-                            "Join us for an interactive workshop on eco-friendly practices and learn how to reduce your carbon footprint.",
-                        link: "/events/sustainability-workshop",
-                    },
-                    {
-                        date: "May 10, 2024",
-                        title: "Sustainability Workshop",
-                        description:
-                            "Join us for an interactive workshop on eco-friendly practices and learn how to reduce your carbon footprint.",
-                        link: "/events/sustainability-workshop",
-                    },
-                    {
-                        date: "May 10, 2024",
-                        title: "Sustainability Workshop",
-                        description:
-                            "Join us for an interactive workshop on eco-friendly practices and learn how to reduce your carbon footprint.",
-                        link: "/events/sustainability-workshop",
-                    }, {
-
-                        date: "May 10, 2024",
-                        title: "Sustainability Workshop",
-                        description:
-                            "Join us for an interactive workshop on eco-friendly practices and learn how to reduce your carbon footprint.",
-                        link: "/events/sustainability-workshop",
-                    },
-                    {
-                        date: "June 2, 2024",
-                        title: "Community Cleanup",
-                        description:
-                            "Help beautify our neighborhood! Meet at the main gate and we'll supply gloves and bags.",
-                        link: "/events/community-cleanup",
-                    },
-                    {
-                        date: "July 18, 2024",
-                        title: "Recycling Fair",
-                        description:
-                            "Discover recycling tips, local vendors, and fun activities for kids at our annual fair.",
-                        link: "/events/recycling-fair",
-                    },
-                    // …more events
-                ].map((event, index) => (
-                    <div key={index}>
-                        <div
-                            className="bg-white rounded-lg shadow-md p-6 mb-8 hover:shadow-lg transition-shadow"
-                        >
-                            <p className="lexend text-gray-500 text-sm">{event.date}</p>
-                            <h3 className="miltonian mt-1 text-2xl font-semibold">
-                                {event.title}
-                            </h3>
-                            <p className="lexend mt-3 text-gray-700">
-
-                                {event.description}
-                            </p>
-
-                            <a
-                                href={event.link}
-                                className="mt-4 inline-flex items-center text-blue-600 hover:underline"
-                            >
-                                Learn More
-                                <Image
-                                    src={ArrowRight}
-                                    alt="arrow"
-                                    className="ml-2 w-5 h-5"
-                                />
-                            </a>
-                        </div>
-                    </div>
-                ))}
+               <PastEventsList />
             </div>
         </div>
 
@@ -252,78 +120,7 @@ export default function events() {
             <div
                 className="flex flex-col col-start-1 col-end-6 row-start-3 row-span-full p-3 overflow-y-auto"
             >
-                {[
-                    {
-                        date: "May 10, 2024",
-                        title: "Sustainability Workshop",
-                        description:
-                            "Join us for an interactive workshop on eco-friendly practices and learn how to reduce your carbon footprint.",
-                        link: "/events/sustainability-workshop",
-                    },
-                    {
-                        date: "May 10, 2024",
-                        title: "Sustainability Workshop",
-                        description:
-                            "Join us for an interactive workshop on eco-friendly practices and learn how to reduce your carbon footprint.",
-                        link: "/events/sustainability-workshop",
-                    },
-                    {
-                        date: "May 10, 2024",
-                        title: "Sustainability Workshop",
-                        description:
-                            "Join us for an interactive workshop on eco-friendly practices and learn how to reduce your carbon footprint.",
-                        link: "/events/sustainability-workshop",
-                    }, {
-
-                        date: "May 10, 2024",
-                        title: "Sustainability Workshop",
-                        description:
-                            "Join us for an interactive workshop on eco-friendly practices and learn how to reduce your carbon footprint.",
-                        link: "/events/sustainability-workshop",
-                    },
-                    {
-                        date: "June 2, 2024",
-                        title: "Community Cleanup",
-                        description:
-                            "Help beautify our neighborhood! Meet at the main gate and we'll supply gloves and bags.",
-                        link: "/events/community-cleanup",
-                    },
-                    {
-                        date: "July 18, 2024",
-                        title: "Recycling Fair",
-                        description:
-                            "Discover recycling tips, local vendors, and fun activities for kids at our annual fair.",
-                        link: "/events/recycling-fair",
-                    },
-                    // …more events
-                ].map((event, index) => (
-                    <div key={index}>
-                        <div
-                            className="bg-white rounded-lg shadow-md p-6 mb-8 hover:shadow-lg transition-shadow"
-                        >
-                            <p className="lexend text-gray-500 text-sm">{event.date}</p>
-                            <h3 className="miltonian mt-1 text-2xl font-semibold">
-                                {event.title}
-                            </h3>
-                            <p className="lexend mt-3 text-gray-700">
-
-                                {event.description}
-                            </p>
-
-                            <a
-                                href={event.link}
-                                className="mt-4 inline-flex items-center text-blue-600 hover:underline"
-                            >
-                                Learn More
-                                <Image
-                                    src={ArrowRight}
-                                    alt="arrow"
-                                    className="ml-2 w-5 h-5"
-                                />
-                            </a>
-                        </div>
-                    </div>
-                ))}
+                <OpportunitiesList />
             </div>
         </div>
     </div>);
