@@ -5,7 +5,6 @@ export default async function UpcomingEvents() {
     const data = await getSheetsData(
         process.env.UPCOMING_EVENTS_HOME_PAGE_SHEET_ID as string, "A2:D1000");
 
-    console.log(data);
     return (
         <div className="w-full h-80 grid grid-cols-12 grid-rows-12 bg-[#D9D9D9] relative overflow-hidden">
             <h1 className="whitespace-normal text-3xl font-bold ml-0 sm:ml-5 text-center sm:text-left col-start-1 row-start-2 col-span-full font-lexend">

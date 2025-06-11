@@ -8,8 +8,6 @@ export default async function ResourcesList() {
         process.env.RESOURCES_SHEET_ID as string, "A2:D1000"
     );
 
-    console.log(data);
-
     return (
         <ResourcesGrid resources={data as string[][]} />
     );
