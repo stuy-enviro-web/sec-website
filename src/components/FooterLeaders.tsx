@@ -6,8 +6,6 @@ export default async function FooterLeaders() {
     const data = await getSheetsData(
         process.env.FOOTER_LEADERS_SHEET_ID as string, "A1:B3")
 
-    console.log(data);
-
     return (
         <div>
             <div className="flex justify-between">

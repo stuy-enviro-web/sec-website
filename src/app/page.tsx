@@ -1,6 +1,6 @@
 
 import Carousel from "@/components/carousel";
-import UpcomingEvents from "@/components/homepage_upcoming_events";
+import UpcomingEvents from "@/components/HomeUpcomingEvents";
 
 import instagram_logo from "public/logos/Instagram_logo.svg"
 import discord_logo from "public/logos/Discord_logo.svg"
