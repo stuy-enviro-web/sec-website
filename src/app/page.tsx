@@ -1,6 +1,6 @@
 
 import Carousel from "@/components/carousel";
-import UpcomingEvents from "@/components/homepage_upcoming_events";
+import UpcomingEvents from "@/components/HomeUpcomingEvents";
 
 import instagram_logo from "public/logos/Instagram_logo.svg"
 import discord_logo from "public/logos/Discord_logo.svg"
@@ -14,6 +14,7 @@ import image_medley from "public/media/image_medley.png";
 
 import Link from "next/link";
 import Image from "next/image"
+import HelpfulLinks from "@/components/HomePageHelpfulLinks";
 
 
 export default function Home() {
@@ -54,8 +55,6 @@ export default function Home() {
                         rel="noopener noreferrer"
                         className="group relative w-10 h-10 transform transition duration-500 ease-in-out hover:scale-110 hover:-translate-y-2 hover:rotate-3"
                     >
-                        {/* glowing halo */}
-                        <span className="absolute inset-0 rounded-full bg-cyan-400 opacity-0 blur-md group-hover:opacity-30 transition-opacity duration-300" />
                         {/* icon */}
                         <Image
                             src={icon.src}
@@ -85,51 +84,22 @@ export default function Home() {
             <Image src={club_board} className="invisible md:visible w-full h-auto col-start-1 col-end-4 row-start-8 row-span-full p-2" alt="A picture of the SEC club board" />
             <Image src={funny_faces} className="invisible md:visible w-full h-auto row-start-2 row-end-6 col-start-10 col-span-full p-2" alt="A picture of the SEC members making funny faces" />
         </div>
-        <div className="w-full h-[60em] grid grid-cols-12 grid-rows-12">
-            <h1 className="row-start-1 text-5xl miltonian col-start-2 col-span-full">Helpful Links</h1>
-            <p className="row-start-2 col-start-2 col-end-11 text-md font-light lexend">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <div className="row-start-6 md:row-start-4 col-start-2 col-span-full flex flex-col items-start justify-start text-md font-light lexend">
-                <h3 className=" text-2xl font-bold miltonian">
-                    Old Website
-                </h3>
-
-                <ul className="text-md font-light lexend pl-5">
-                    <li><a className="hover:underline" href="https://stuyenviro.weebly.com/">SEC&apos;s Old Website</a></li>
-                    <li><a className="hover:underline" href="https://google.com">LOREM IPSUM</a></li>
-                    <li><a className="hover:underline" href="https://google.com">LOREM IPSUM</a></li>
-                    <li><a className="hover:underline" href="https://google.com">LOREM IPSUM</a></li>
-
-                </ul>
-                <br />
-                <h3 className="text-2xl font-bold miltonian">
-                    Socials
-                </h3>
-                <ul className="text-md font-light lexend pl-5">
-                    <li><a className="hover:underline" href="https://google.com">LOREM IPSUM</a></li>
-                    <li><a className="hover:underline" href="https://google.com">LOREM IPSUM</a></li>
-                    <li><a className="hover:underline" href="https://google.com">LOREM IPSUM</a></li>
-
-                </ul>
-                <br />
-                <h3 className="text-2xl font-bold miltonian">
-                    Other
-                </h3>
-                <ul className="text-md font-light lexend pl-5">
-                    <li><a className="hover:underline" href="https://google.com">LOREM IPSUM</a></li>
-                    <li><a className="hover:underline" href="https://google.com">LOREM IPSUM</a></li>
-                    <li><a className="hover:underline" href="https://google.com">LOREM IPSUM</a></li>
-
-                </ul>
-                <br />
-                <p className="font-light text-md">If you have any problems / concerns, please contact <a href="">emailaddr@test.org</a></p>
-            </div>
-
+            <div className="w-full grid grid-cols-12 auto-rows-auto gap-y-6">
+                <h1 className="col-start-2 col-end-12 row-start-1 text-5xl miltonian">
+                    Helpful Links
+                </h1>
+                <p className="col-start-2 col-end-11 row-start-2 text-md font-light lexend">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+        <div className="col-start-2 col-end-12 row-start-3 flex flex-col items-start justify-start text-md font-light lexend">
+            <HelpfulLinks />
         </div>
+            </div>
     </div>
     );
 }
