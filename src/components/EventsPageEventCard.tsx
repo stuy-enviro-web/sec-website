@@ -17,10 +17,12 @@ export default function EventsPageEventCard({ event }: EventsPageEventCardProps)
             </p>
             <a
                 href={event[3]}
-                className="mt-4 inline-flex items-center text-blue-600 hover:underline"
+                className="items-center justify-start space-x-2 z-10 group
+                                     transform transition-transform duration-300 ease-out
+                                      group-hover:text-emerald-300 group group-hover:underline mt-4 inline-flex text-gray-700 "
             >
-                Learn More
-                <Image src={ArrowRight} alt="arrow" className="ml-2 w-5 h-5" />
+                <p className="group-hover:scale-110 group group-hover:text-emerald-300 group-hover:underline">Learn More</p>
+                <Image src={ArrowRight} alt="arrow" className="group ml-2 w-5 h-5 -translate-x-3 transition-transform duration-300 group-hover:-translate-x-2" />
             </a>
         </div>
     )

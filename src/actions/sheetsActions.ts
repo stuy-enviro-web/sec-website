@@ -35,18 +35,33 @@ export async function getSheetsData(
     }
 
     try {
-        const auth = new google.auth.GoogleAuth({
-            credentials,
-            scopes: ["https://www.googleapis.com/auth/spreadsheets.readonly"],
+        // optimize auth by using a single long-lived JWT client (faster token reuse)
+        const auth = new google.auth.JWT({
+            email: credentials.client_email!,
+            key: credentials.private_key!.replace(/\\n/g, "\n"),
+            scopes: [ "https://www.googleapis.com/auth/spreadsheets.readonly" ],
         });
+        // fetch & cache the access token once per instantiation
+        await auth.authorize();
 
         const sheets = google.sheets({ version: "v4", auth });
-        const response = await sheets.spreadsheets.values.get({
-            spreadsheetId,
-            range,
-        });
+        let response;
+        // retry with exponential backoff on 429 quota errors
+        for (let attempt = 0; attempt < 5; attempt++) {
+            try {
+                response = await sheets.spreadsheets.values.get({ spreadsheetId, range });
+                break;
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            } catch (err: any) {
+                const isQuota = err?.code === 429;
+                if (!isQuota || attempt === 4) throw err;
+                const delay = Math.pow(2, attempt) * 1000;
+                console.warn(`Quota hit, retrying in ${delay}ms (attempt ${attempt + 1})`);
+                await new Promise(res => setTimeout(res, delay));
+            }
+        }
 
-        const values = response.data.values || [];
+        const values = response?.data.values || [];
         // update cache
         cache[key] = { timestamp: now, data: values };
         return values;
