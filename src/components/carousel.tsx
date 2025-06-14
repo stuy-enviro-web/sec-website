@@ -46,15 +46,15 @@ export default function Carousel() {
                             href="/about"
                             className="group col-start-2 row-start-9 col-span-full flex items-center justify-start space-x-2 z-10
                                      transform transition-transform duration-300 ease-out text-black
-                                     hover:scale-105 hover:text-emerald-50 hover:underline"
+                                    hover:underline hover:text-emerald-300"
                         >
-                            <h3 className="lexend text-2xl text-black transition-colors duration-300 group-hover:text-emerald-50">
+                            <h3 className="lexend text-2xl group-hover:scale-105 transition-colors duration-300">
                                 Check out more about us
                             </h3>
                             <Image
                                 src={ArrowRight}
                                 alt="Arrow pointing right"
-                                className="w-10 h-10 transition-transform duration-300 group-hover:translate-x-2"
+                                className="w-10 h-10 transition-transform -translate-x-2 duration-300 group-hover:translate-x-0"
                             />
                         </Link>
                         <div className="h-full w-full flex items-center justify-center col-start-1 col-span-full row-start-1 row-span-full">
@@ -70,17 +70,17 @@ export default function Carousel() {
                     </h1>
                     <Link
                         href="/events"
-                        className="group col-start-2 row-start-9 col-span-full flex items-center justify-start space-x-2 z-10
+                        className="group col-start-2 row-start-9 col-span-5 flex items-center justify-start space-x-2 z-10
                                      transform transition-transform duration-300 ease-out text-white
-                                     hover:scale-105 hover:text-emerald-50 hover:underline"
+                                      group-hover:underline group-hover:text-emerald-500"
                     >
-                        <h3 className="lexend text-2xl text-white transition-colors duration-300 group-hover:text-emerald-200">
+                        <h3 className="lexend text-2xl group group-hover:underline group-hover:scale-105 text-white duration-300 group-hover:text-emerald-300">
                             See what we do
                         </h3>
                         <Image
                             src={ArrowRight}
                             alt="Arrow pointing right"
-                            className="w-10 h-10 invert transition-transform duration-300 group-hover:translate-x-2"
+                            className="w-10 h-10 invert group transition-transform duration-300 -translate-x-2 group-hover:translate-x-0"
                         />
                     </Link>
                     <Image
@@ -100,17 +100,17 @@ export default function Carousel() {
                     </h1>
                     <Link
                         href="/resources"
-                        className="group col-start-2 row-start-9 col-span-full flex items-center justify-start space-x-2 z-10
+                        className="group col-start-2 row-start-9 col-span-5 flex items-center justify-start space-x-2 z-10
                                      transform transition-transform duration-300 ease-out text-white
-                                     hover:scale-105 hover:text-emerald-50 hover:underline"
+                                      hover:text-cyan-300 hover:underline"
                     >
-                        <h3 className="lexend text-2xl text-white transition-colors duration-300 group-hover:text-cyan-400">
+                        <h3 className="hover:scale-105 lexend text-2xl transition-colors duration-300 ">
                             Look at what we have
                         </h3>
                         <Image
                             src={ArrowRight}
                             alt="Arrow pointing right"
-                            className="w-10 h-10 invert transition-transform duration-300 group-hover:translate-x-2"
+                            className="w-10 h-10 invert transition-transform duration-300 -translate-x-2 group-hover:translate-x-0"
                         />
                     </Link>
                     <Image
