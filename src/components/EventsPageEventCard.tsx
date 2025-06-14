@@ -18,7 +18,7 @@ export default function EventsPageEventCard({ event }: EventsPageEventCardProps)
             <a
                 href={event[3]}
                 className="items-center justify-start space-x-2 z-10 group
-                                     transform transition-transform duration-300 ease-out 
+                                     transform transition-transform duration-300 ease-out
                                       group-hover:text-emerald-300 group group-hover:underline mt-4 inline-flex text-gray-700 "
             >
                 <p className="group-hover:scale-110 group group-hover:text-emerald-300 group-hover:underline">Learn More</p>
