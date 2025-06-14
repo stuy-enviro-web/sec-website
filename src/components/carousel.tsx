@@ -58,7 +58,7 @@ export default function Carousel() {
                             />
                         </Link>
                         <div className="h-full w-full flex items-center justify-center col-start-1 col-span-full row-start-1 row-span-full">
-                            <Image src={fullsizerender} className="w-auto h-full lg:w-full lg:h-auto b-2 opacity-75 object-cover object-center" alt="2015-2016 Arbor Day Event" style={{ maxHeight: '100%', maxWidth: '100%' }} />
+                            <Image src={fullsizerender} className="w-auto h-full lg:w-full lg:h-auto b-2 opacity-90 object-cover object-center" alt="2015-2016 Arbor Day Event" style={{ maxHeight: '100%', maxWidth: '100%' }} />
                         </div>
                     </div>
                 </div>
