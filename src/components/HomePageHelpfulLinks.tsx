@@ -1,5 +1,7 @@
 
 import { getSheetsData } from "@/actions/sheetsActions";
+import ArrowRight from "public/arrow_right.svg";
+import Image from "next/image";
 
 export default async function HelpfulLinks() {
 
@@ -26,9 +28,12 @@ export default async function HelpfulLinks() {
                     <h3 className="text-2xl font-bold miltonian">{category}</h3>
                     <ul className="text-md font-light lexend pl-5">
                         {urls.map((url: string, i: number) => (
-                            <li key={i}>
-                                <a href={url} className="hover:underline">
-                                    {labels[i] ?? url}
+                            <li key={i} className="group">
+                                <a href={url} className="group hover:font-bold lexend space-x-2 z-10
+                                     transform transition-transform duration-300 ease-out
+                                     hover:scale-105 hover:text-emerald-300 flex flex-row">
+                                    <p>{labels[i] ?? url}</p>
+                                    <Image src={ArrowRight} alt="arrow" className="group invisible group-hover:visible w-5 h-5 -translate-x-3 transition-transform duration-300 group-hover:-translate-x-2" />
                                 </a>
                             </li>
                         ))}
