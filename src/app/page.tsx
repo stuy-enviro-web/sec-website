@@ -79,7 +79,7 @@ export default function Home() {
                 <br />
                 <br />
                 <Link href="\about" className="lexend text-md flex items-center justify-start space-x-2 z-10
-                                     transform transition-transform duration-300 ease-out text-black group 
+                                     transform transition-transform duration-300 ease-out text-black group
                                        group-hover:text-emerald-500">
                     <div className="lexend text-md group group-hover:underline group-hover:scale-105 duration-300 group-hover:text-emerald-300">Check out More</div>
                     <Image src={arrowRight} className="w-4 h-4 group transition-transform duration-300 -translate-x-2 group-hover:translate-x-0" alt="right direction arrow" />
